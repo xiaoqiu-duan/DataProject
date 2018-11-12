@@ -19,6 +19,7 @@ import javax.annotation.PostConstruct;
 public class IndexServiceImpl implements IndexService {
     private static final Logger logger = LoggerFactory.getLogger(IndexServiceImpl.class);
 
+    @Override
     public void test() {
         logger.debug("==========");
     }
