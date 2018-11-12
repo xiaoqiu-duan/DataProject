@@ -3,6 +3,7 @@ package com.xq.web.api;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Package: com.xq.web.controller.com.xq.web.api
@@ -12,9 +13,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Time: 18:44
  * Description:
  */
-@Controller
 @RequestMapping("/api/index")
+@Controller
 public class IndexApiController {
+
+    @RequestMapping("/test.ajax")
+    @ResponseBody
+    public String test() {
+        return "test";
+    }
+
 }
 
 
