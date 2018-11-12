@@ -17,14 +17,16 @@ public class IndexController {
 
     private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
+    @Autowired
+    private IndexService indexService;
 
     @RequestMapping("/index.ajax")
     @ResponseBody
     public String index() {
         logger.debug("=======IndexController index========");
+        indexService.test();
         return "hello world";
     }
-
 
 
 }
