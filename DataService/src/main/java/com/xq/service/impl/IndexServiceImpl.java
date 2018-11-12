@@ -19,13 +19,11 @@ import javax.annotation.PostConstruct;
 public class IndexServiceImpl implements IndexService {
     private static final Logger logger = LoggerFactory.getLogger(IndexServiceImpl.class);
 
-
-    @PostConstruct
-    public void init() {
-        while (true) {
-            logger.debug("======init=====");
-        }
-
+    public void test() {
+        logger.debug("==========");
     }
+
+
+    /*@PostConstruct*/
 
 }
