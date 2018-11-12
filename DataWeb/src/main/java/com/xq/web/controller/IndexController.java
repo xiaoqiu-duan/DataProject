@@ -17,8 +17,6 @@ public class IndexController {
 
     private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
-    @Autowired
-    private IndexService indexService;
 
     @RequestMapping("/index.ajax")
     @ResponseBody
