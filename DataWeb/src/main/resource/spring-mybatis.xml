@@ -49,14 +49,6 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 
-    <!-- transaction manager, use JtaTransactionManager for global tx -->
-    <bean id="transactionManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
-        <qualifier value="mobile" />
-    </bean>
-
-    <tx:annotation-driven transaction-manager="transactionManager" />
 
     <context:component-scan base-package="com.xq.dao"/>
 </beans>
